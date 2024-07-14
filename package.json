@@ -1,0 +1,14 @@
+{
+  "name": "autodegen",
+  "version": "1.0.0",
+  "description": "Autodegen website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Antonio",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
