@@ -1,6 +1,43 @@
+/* navbar */
+/* placeholder */
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../img/white_noise.gif);
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "AutonomaDisplayBold";
+  src: url("../../css/fonts/autonomadisplay-bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "AutonomaDisplayBoldItalic";
+  src: url("../../css/fonts/autonomadisplay-bolditalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "AutonomaDisplayBold", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #95f386; }
+
+nav {
+  background-color: #000; }
+  nav img {
+    height: 4rem; }
+  nav p {
+    display: inline-block; }
+
+.content {
+  padding: 3rem; }
