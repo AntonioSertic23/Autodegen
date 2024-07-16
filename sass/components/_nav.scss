@@ -1,15 +1,89 @@
 nav {
-  background-color: $color-black;
+  margin: 3.7rem 5rem;
+  height: 2.8rem;
 
-  img {
-    height: 4rem;
-  }
-
-  p {
+  .nav__logo-box {
     display: inline-block;
-  }
-}
+    float: left;
+    position: relative;
 
-.content {
-  padding: 3rem;
+    .nav__logo {
+      height: 2.6rem;
+    }
+
+    .nav__title {
+      font-size: 2rem;
+      display: inline-block;
+
+      position: absolute;
+      top: 0;
+      margin-left: 1rem;
+    }
+  }
+
+  .nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+
+    .nav__item {
+      display: inline;
+      font-size: 2rem;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+
+      .nav__link {
+        color: $color-grey;
+        text-decoration: none;
+        padding: 0 1.2rem;
+        position: relative;
+
+        &::before {
+          content: "[";
+          position: absolute;
+          opacity: 0;
+          transition: transform 0.6s;
+          transform: translateX(-1.2rem);
+        }
+
+        &::after {
+          content: "]";
+          position: absolute;
+          opacity: 0;
+          transition: transform 0.6s;
+          transform: translateX(0);
+        }
+
+        &:hover {
+          color: $color-primary;
+
+          &::before {
+            transform: translateX(-1.7rem);
+            opacity: 1;
+          }
+
+          &::after {
+            transform: translateX(0.5rem);
+            opacity: 1;
+          }
+        }
+      }
+
+      .active {
+        color: $color-primary;
+
+        &::before {
+          opacity: 1;
+        }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
