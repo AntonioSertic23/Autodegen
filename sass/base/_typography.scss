@@ -26,14 +26,12 @@ body,
 
 .nav__list,
 .footer-left__credits,
-.footer-right__content {
+.footer-right__content,
+.ai-section__content,
+#prompt-input {
   font-family: "CourierPrime", sans-serif;
 }
 
-.nav__list,
-.footer-right__content {
-  font-weight: 400;
-}
 .footer-left__credits {
   font-weight: 700;
 }
