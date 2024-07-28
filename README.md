@@ -18,78 +18,90 @@ For this project, I chose to replicate a design I found on Behance: [AI Autodege
 
 The primary objective of this project is to reinforce my skills by applying what I learned in the course. The Advanced CSS and Sass course includes three main projects, each focusing on different aspects of CSS and Sass. If you're familiar with the course, you'll know each project is unique in its approach.
 
-In this branch, I will build the Autodegen website using the float layout technique. This approach aligns with the principles from the first project in the course, which does not use Grid or Flexbox. By using float layout, I aim to gain a deeper understanding of this traditional method and its application in web design.
-
 ## Project Structure
 
 ### Sections
 
-- **AI**: This section will showcase AI-related content and features. 🟢 _(Implemented)_
-- **News**: This section will include the latest news and updates. 🟡 _(Coming Soon)_
-- **Terminal**: This section will provide a terminal interface or terminal-related information. 🟡 _(Coming Soon)_
-- **About**: This section will give an overview of the website or project. 🟡 _(Coming Soon)_
-- **Contacts**: This section will have contact information and a contact form. 🟡 _(Coming Soon)_
+- **AI**: This section will showcase AI-related content and features.
+- **News**: This section will include the latest news and updates.
+- **Terminal**: This section will provide a terminal interface or terminal-related information.
+- **About**: This section will give an overview of the website or project.
+- **Contacts**: This section will have contact information and a contact form.
 
 ### Technology and Tools
 
 - **HTML5**
 - **CSS3**
 - **Sass**: Leveraging the power of Sass for better CSS management.
-- **No Grid or Flexbox**: For this iteration, I'm focusing on traditional layout techniques as per the first project in the course.
 
 ## How to Run the Project
 
-1. **Clone the repository:**
+1.  **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/AntonioSertic23/Autodegen.git
-   ```
+    ```bash
+    git clone https://github.com/AntonioSertic23/Autodegen.git
+    ```
 
-2. **Navigate to the project directory:**
+2.  **Navigate to the project directory:**
 
-   ```bash
+    ```bash
     cd Autodegen
-   ```
+    ```
 
-3. **Switch to the float-layout branch:**
+3.  **Install dependencies:**
 
-   ```bash
-   git checkout float-layout
-   ```
+    ```bash
+    npm install
+    ```
 
-4. **Install dependencies:**
+4.  **Compile Sass to CSS:**
 
-   ```bash
-   npm install
-   ```
+    You have several options for compiling Sass files to CSS, depending on the layout you are working with.
 
-5. **Compile Sass to CSS:**
+    - **Option 1**: Compile Specific Layout
 
-   - **Option 1**: Use npm to compile the Sass files into CSS:
+      - Float Layout:
 
-   ```bash
-   npm run compile:sass
-   ```
+        ```bash
+        npm run compile-float:sass
+        ```
 
-   - **Option 2**: Use npm to watch Sass files for changes and automatically compile:
+      - Flexbox Layout:
 
-   ```bash
-   npm run watch:sass
-   ```
+        ```bash
+        npm run compile-flexbox:sass
+        ```
 
-6. **Open the project in a web browser:**
+      - Grid Layout:
 
-   - **Option 1**: Open `index.html` in your preferred web browser.
-   - **Option 2**: Use a live server tool for easier development and automatic reloading (e.g., Live Server in VSCode).
+        ```bash
+        npm run compile-grid:sass
+        ```
 
-## Future Enhancements
+    - **Option 2**: Watch Sass Files for Changes
 
-This branch focuses on implementing the project using the Float Layout technique. For a comprehensive understanding of different layout methods, you can explore other branches in this repository:
+      - Watch Float Layout:
 
-- **flexbox-layout**: See how the same project is built using Flexbox techniques.
-- **grid-layout**: Explore the project implemented with CSS Grid.
+        ```bash
+        npm run watch-float:sass
+        ```
 
-By comparing these branches, you can understand the differences, advantages, and limitations of each approach.
+      - Watch Flexbox Layout:
+
+        ```bash
+        npm run watch-flexbox:sass
+        ```
+
+      - Watch Grid Layout:
+
+        ```bash
+        npm run watch-grid:sass
+        ```
+
+5.  **Open the project in a web browser:**
+
+    - **Option 1**: Open `index.html` in your preferred web browser.
+    - **Option 2**: Use a live server tool for easier development and automatic reloading (e.g., Live Server in VSCode).
 
 ## Contributions
 
