@@ -51,13 +51,19 @@ In this branch, I will build the Autodegen website using the float layout techni
     cd Autodegen
    ```
 
-3. **Install dependencies:**
+3. **Switch to the float-layout branch:**
+
+   ```bash
+   git checkout float-layout
+   ```
+
+4. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-4. **Compile Sass to CSS:**
+5. **Compile Sass to CSS:**
 
    - **Option 1**: Use npm to compile the Sass files into CSS:
 
@@ -71,7 +77,7 @@ In this branch, I will build the Autodegen website using the float layout techni
    npm run watch:sass
    ```
 
-5. **Open the project in a web browser:**
+6. **Open the project in a web browser:**
 
    - **Option 1**: Open `index.html` in your preferred web browser.
    - **Option 2**: Use a live server tool for easier development and automatic reloading (e.g., Live Server in VSCode).
