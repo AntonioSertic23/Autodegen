@@ -14,4 +14,10 @@ html {
 body {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../img/white_noise.gif);
   box-sizing: border-box;
+  color: $color-primary;
+}
+
+main {
+  min-height: calc(100vh - 21rem); /* 21rem = nav + footer */
+  padding: 5rem;
 }
