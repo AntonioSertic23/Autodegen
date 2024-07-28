@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "AutonomaDisplayBold";
+  src: url("../../css/fonts/Autonoma_Display/autonomadisplay-bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AutonomaDisplayBoldItalic";
+  src: url("../../css/fonts/Autonoma_Display/autonomadisplay-bolditalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CourierPrime";
+  src: url("../../css/fonts/Courier_Prime/CourierPrime-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+.btn {
+  font-family: "AutonomaDisplayBold", sans-serif;
+}
+
+.nav__list,
+.footer-left__credits,
+.footer-right__content,
+.ai-section__content,
+#prompt-input {
+  font-family: "CourierPrime", sans-serif;
+}
+
+.footer-left__credits {
+  font-weight: 700;
+}

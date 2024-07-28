@@ -1,0 +1,39 @@
+.ai-section {
+  &__title {
+    font-size: 6.4rem;
+    font-weight: 700;
+  }
+
+  &__content {
+    font-size: 2rem;
+    margin-top: 5rem;
+    color: $color-grey-light;
+
+    .ai-text {
+      margin-bottom: 2rem;
+      padding-right: 18rem;
+
+      span {
+        color: $color-primary;
+      }
+    }
+
+    .user-text {
+      margin-bottom: 2rem;
+      padding-right: 18rem;
+
+      span {
+        color: $color-secondary-light;
+      }
+    }
+
+    #prompt-input {
+      font-size: 2rem;
+      color: $color-grey-light;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+}
