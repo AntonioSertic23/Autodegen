@@ -4,7 +4,12 @@
   "description": "Autodegen website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile-float:sass": "node-sass sass/float-layout/main.scss css/style.css",
+    "compile-flexbox:sass": "node-sass sass/flexbox-layout/main.scss css/style.css",
+    "compile-grid:sass": "node-sass sass/grid-layout/main.scss css/style.css",
+    "watch-float:sass": "node-sass sass/float-layout/main.scss css/style.css -w",
+    "watch-flexbox:sass": "node-sass sass/flexbox-layout/main.scss css/style.css -w",
+    "watch-grid:sass": "node-sass sass/grid-layout/main.scss css/style.css -w"
   },
   "author": "Antonio",
   "license": "ISC",
