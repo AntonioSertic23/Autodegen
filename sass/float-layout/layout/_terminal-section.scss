@@ -1,0 +1,40 @@
+.terminal-section {
+  &__title {
+    font-size: 6.4rem;
+    font-weight: 700;
+  }
+
+  tbody {
+    background: radial-gradient(48.48% 23.87% at 54.69% 70.76%, rgba(34, 61, 25, 0.902542) 0%, rgba(33, 76, 37, 0.0001) 100%);
+  }
+
+  table {
+    margin-top: 5rem;
+    border-collapse: separate; /* Razdvajanje granica ćelija */
+    border-spacing: 10px; /* Horizontalni i vertikalni razmak između ćelija */
+  }
+
+  th {
+    font-size: 1.6rem;
+  }
+  td {
+    font-size: 1.2rem;
+    width: 7rem;
+    height: 3rem;
+  }
+
+  table,
+  th,
+  td {
+  }
+  th,
+  td {
+  }
+}
+
+td {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}

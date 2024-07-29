@@ -1,0 +1,68 @@
+.news-section {
+  &__title {
+    font-size: 6.4rem;
+    font-weight: 700;
+  }
+
+  .card {
+    display: block;
+    color: $color-grey-light;
+    padding: 3rem 0;
+    border-bottom: 1px solid #95f3864d;
+
+    .card_title {
+      font-size: 3.6rem;
+    }
+    .card_text {
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+      max-width: 90%;
+    }
+
+    .card_badges-container {
+      .card_badge {
+        font-size: 1.4rem;
+        display: inline-block;
+        padding: 8px 5px;
+
+        img,
+        p {
+          float: left;
+        }
+
+        p {
+          margin-left: 6px;
+        }
+
+        &:not(:first-of-type) {
+          margin-left: 2.6rem;
+        }
+      }
+
+      .badge_likes,
+      .badge_dislikes {
+        border: 1px solid $color-grey-dark-2;
+        border-radius: 10px;
+        background-color: $color-primary;
+      }
+
+      .badge_likes {
+        color: $color-grey-dark-2;
+      }
+
+      .badge_dislikes {
+        background-color: $color-grey-dark-4;
+        color: $color-primary;
+      }
+
+      .badge_time,
+      .badge_date {
+        color: $color-grey;
+      }
+    }
+
+    &:first-of-type {
+      margin-top: 5rem;
+    }
+  }
+}
