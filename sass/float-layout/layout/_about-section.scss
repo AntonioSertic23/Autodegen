@@ -1,32 +1,31 @@
-.about-section {
+.about {
   &__title {
     font-size: 6.4rem;
     font-weight: 700;
     margin-bottom: 10rem;
   }
 
-  &__content-left {
+  &__content-left,
+  &__content-right {
     width: 50%;
     float: left;
   }
 
   &__content-right {
-    width: 50%;
-    float: left;
-
-    .about_icon {
+    .about__icon {
       width: 9.5rem;
       margin-right: 14rem;
       margin-top: 6rem;
     }
   }
 
-  .section-title {
+  &__subtitle {
     font-size: 9.6rem;
     color: $color-grey-light;
   }
 
-  .section-text {
+  &__text {
+    font-family: "CourierPrime", sans-serif;
     font-size: 2rem;
     color: $color-grey-light;
     margin-top: 3rem;
@@ -34,101 +33,106 @@
   }
 }
 
-.about-section-1 {
+.about--section-1 {
   height: 71rem;
 }
 
-.about-section-2 {
+.about--section-2 {
   border: 1px solid $color-primary;
   border-radius: 4rem;
   height: 50rem;
   margin-top: 10rem;
 
-  .about-section__content-left {
-    .about_icon {
+  .about__content-left {
+    .about__icon {
       width: 19rem;
     }
   }
 
-  .about_icon-1 {
+  .about__icon-1 {
     transform: translateY(-43%) translateX(-18%);
   }
-  .about_icon-2 {
+
+  .about__icon-2 {
     transform: translateY(75%) translateX(75%);
   }
-  .about_icon-3 {
+
+  .about__icon-3 {
     transform: translateY(186%) translateX(70%);
   }
 
-  .about-section__content-right {
+  .about__content-right {
     margin-top: 7rem;
   }
-}
 
-.about-section-2 .section-title,
-.about-section-2 .section-text {
-  margin-right: 20rem;
-  margin-left: 7rem;
-}
-
-.about-section-3 {
-  margin-top: 30rem;
-
-  .about-section__content-left {
-    float: none;
+  .about__subtitle,
+  .about__text {
+    margin-right: 20rem;
+    margin-left: 7rem;
   }
 }
 
-.team-container {
-  margin-top: 8rem;
+.about--section-3 {
+  margin-top: 30rem;
 
-  .team-card {
-    display: inline-block;
-    width: 34.4rem;
-    height: 56.7rem;
+  .about__content-left {
+    float: none;
+  }
 
-    &:not(:last-of-type) {
-      margin-right: 12rem;
-    }
+  .team {
+    margin-top: 8rem;
 
-    .card-header {
+    &__card {
+      display: inline-block;
       width: 34.4rem;
-      height: 34.4rem;
-      border: 2px dashed $color-primary;
-      text-align: center;
+      height: 56.7rem;
 
-      .about_team_icon {
-        width: 20rem;
-        height: 20rem;
-        margin-top: 20%;
+      &:not(:last-of-type) {
+        margin-right: 12rem;
       }
-    }
 
-    .card-body {
-      margin-top: 5rem;
+      &-header {
+        width: 34.4rem;
+        height: 34.4rem;
+        border: 2px dashed $color-primary;
+        text-align: center;
 
-      .person-name {
-        font-size: 3.2rem;
-        color: $color-grey-light;
+        .team__icon {
+          width: 20rem;
+          height: 20rem;
+          margin-top: 20%;
+        }
       }
-      .person-position {
-        font-size: 1.6rem;
-        color: $color-grey;
-      }
-      .person-text {
-        margin-top: 1rem;
-        font-size: 1.6rem;
-        color: $color-grey-light;
-      }
-    }
 
-    .card-footer {
-      margin-top: 3rem;
+      &-body {
+        margin-top: 5rem;
 
-      img {
-        width: 2.6rem;
-        height: 2.6rem;
-        margin-right: 1.3rem;
+        .team__name {
+          font-size: 3.2rem;
+          color: $color-grey-light;
+        }
+
+        .team__position {
+          font-size: 1.6rem;
+          color: $color-grey;
+        }
+
+        .team__text {
+          font-family: "CourierPrime", sans-serif;
+          margin-top: 1rem;
+          font-size: 1.6rem;
+          color: $color-grey-light;
+        }
+      }
+
+      &-footer {
+        margin-top: 3rem;
+
+        .team__social-icon {
+          width: 2.6rem;
+          height: 2.6rem;
+          margin-right: 1.3rem;
+        }
       }
     }
   }

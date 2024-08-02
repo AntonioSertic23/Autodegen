@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="css/style.css" />
     <title>Autodegen | AI-powered assistant</title>
   </head>
-  <body class="bg-video">
-    <nav>
+  <body class="page page--bg-video">
+    <!-- Main Navigation -->
+    <nav class="nav">
       <div class="nav__logo-box">
         <img src="./img/LOGO_flat.png" alt="Logo" class="nav__logo" />
         <p class="nav__title">AUTODEGEN</p>
@@ -22,7 +22,7 @@
           <a href="news.html" class="nav__link">News</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link active">Terminal</a>
+          <a href="#" class="nav__link nav__link--active">Terminal</a>
         </li>
         <li class="nav__item">
           <a href="about.html" class="nav__link">About</a>
@@ -33,187 +33,195 @@
       </ul>
     </nav>
 
-    <main>
-      <section class="terminal-section">
-        <h1 class="terminal-section__title">[TERMINAL]</h1>
+    <main class="main-content">
+      <!-- Terminal Section -->
+      <section class="terminal">
+        <h1 class="terminal__title">[TERMINAL]</h1>
 
-        <table>
-          <thead>
-            <tr>
-              <th>
+        <table class="terminal__table">
+          <thead class="terminal__table-head">
+            <tr class="terminal__table-row">
+              <th class="terminal__table-header">
                 <img src="./img/terminal_table_lines.png" alt="" />
               </th>
-              <th>🟢 BTC</th>
-              <th>🟣 ETH</th>
-              <th>🟡 LTC</th>
-              <th>09:13:28 (UTC+1)</th>
+              <th class="terminal__table-header">🟢 BTC</th>
+              <th class="terminal__table-header">🟣 ETH</th>
+              <th class="terminal__table-header">🟡 LTC</th>
+              <th class="terminal__table-header">09:13:28 (UTC+1)</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>6.500</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+          <tbody class="terminal__table-body">
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">6.500</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
             </tr>
 
-            <tr>
-              <td>6.000</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">6.000</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
             </tr>
 
-            <tr>
-              <td>5.500</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">5.500</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
             </tr>
 
-            <tr>
-              <td>5.000</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><span class="table_inside_value">🟢$6.987</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-
-            <tr>
-              <td>4500</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td><span class="table_inside_value">🟣$7.357</span></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-
-            <tr>
-              <td>4000</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <div class="circle-4"></div>
-                <div class="circle-3"></div>
-                <div class="circle-2"></div>
-                <div class="circle-1"></div>
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">5.000</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data">
+                <span class="terminal__table-value">🟢$6.987</span>
               </td>
-              <td></td>
-              <td><span class="table_inside_value">🟡$3.43</span></td>
-              <td></td>
-              <td></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
             </tr>
 
-            <tr>
-              <td>3500</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">4500</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data">
+                <span class="terminal__table-value">🟣$7.357</span>
+              </td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
             </tr>
 
-            <tr>
-              <td>3000</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">4000</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data">
+                <div class="terminal__circle terminal__circle--4"></div>
+                <div class="terminal__circle terminal__circle--3"></div>
+                <div class="terminal__circle terminal__circle--2"></div>
+                <div class="terminal__circle terminal__circle--1"></div>
+              </td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data">
+                <span class="terminal__table-value">🟡$3.43</span>
+              </td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
             </tr>
 
-            <tr>
-              <td>2500</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">3500</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
             </tr>
 
-            <tr>
-              <td>2000</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">3000</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
             </tr>
 
-            <tr>
-              <td></td>
-              <td>10:59PM</td>
-              <td>11:59PM</td>
-              <td>12:59AM</td>
-              <td>1:59AM</td>
-              <td>2:59AM</td>
-              <td>3:59AM</td>
-              <td>4:59AM</td>
-              <td>5:59AM</td>
-              <td>6:59AM</td>
-              <td>7:59AM</td>
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">2500</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+            </tr>
+
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data">2000</td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data"></td>
+            </tr>
+
+            <tr class="terminal__table-row">
+              <td class="terminal__table-data"></td>
+              <td class="terminal__table-data">10:59PM</td>
+              <td class="terminal__table-data">11:59PM</td>
+              <td class="terminal__table-data">12:59AM</td>
+              <td class="terminal__table-data">1:59AM</td>
+              <td class="terminal__table-data">2:59AM</td>
+              <td class="terminal__table-data">3:59AM</td>
+              <td class="terminal__table-data">4:59AM</td>
+              <td class="terminal__table-data">5:59AM</td>
+              <td class="terminal__table-data">6:59AM</td>
+              <td class="terminal__table-data">7:59AM</td>
             </tr>
           </tbody>
         </table>
       </section>
     </main>
 
-    <nav>
+    <!-- Footer Navigation -->
+    <nav class="nav nav--footer">
       <div class="nav__logo-box">
         <img src="./img/LOGO_flat.png" alt="Logo" class="nav__logo" />
         <p class="nav__title">AUTODEGEN</p>
@@ -227,7 +235,7 @@
           <a href="news.html" class="nav__link">News</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link active">Terminal</a>
+          <a href="#" class="nav__link nav__link--active">Terminal</a>
         </li>
         <li class="nav__item">
           <a href="about.html" class="nav__link">About</a>
@@ -238,18 +246,16 @@
       </ul>
     </nav>
 
+    <!-- Contact Section -->
     <div class="contact" id="contact">
       <div class="contact__content">
         <h1 class="contact__title">[Contacts]</h1>
-
-        <div class="contact__social_media-container">
-          <img class="social_media-icon" src="./img/telegram-icon.png" alt="telegram" />
-          <img class="social_media-icon" src="./img/twitter-icon.png" alt="twitter" />
-          <img class="social_media-icon" src="./img/discord-icon.png" alt="discord" />
+        <div class="contact__social-media">
+          <img class="contact__icon" src="./img/telegram-icon.png" alt="telegram" />
+          <img class="contact__icon" src="./img/twitter-icon.png" alt="twitter" />
+          <img class="contact__icon" src="./img/discord-icon.png" alt="discord" />
         </div>
-
         <h3 class="contact__email">AI@AUTODEGEN.IO</h3>
-
         <a href="#" class="contact__close">close</a>
       </div>
     </div>
