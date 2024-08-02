@@ -40,8 +40,9 @@
 
 .about-section-2 {
   border: 1px solid $color-primary;
-  border-radius: 40px;
+  border-radius: 4rem;
   height: 50rem;
+  margin-top: 10rem;
 
   .about-section__content-left {
     .about_icon {
@@ -68,4 +69,67 @@
 .about-section-2 .section-text {
   margin-right: 20rem;
   margin-left: 7rem;
+}
+
+.about-section-3 {
+  margin-top: 30rem;
+
+  .about-section__content-left {
+    float: none;
+  }
+}
+
+.team-container {
+  margin-top: 8rem;
+
+  .team-card {
+    display: inline-block;
+    width: 34.4rem;
+    height: 56.7rem;
+
+    &:not(:last-of-type) {
+      margin-right: 12rem;
+    }
+
+    .card-header {
+      width: 34.4rem;
+      height: 34.4rem;
+      border: 2px dashed $color-primary;
+      text-align: center;
+
+      .about_team_icon {
+        width: 20rem;
+        height: 20rem;
+        margin-top: 20%;
+      }
+    }
+
+    .card-body {
+      margin-top: 5rem;
+
+      .person-name {
+        font-size: 3.2rem;
+        color: $color-grey-light;
+      }
+      .person-position {
+        font-size: 1.6rem;
+        color: $color-grey;
+      }
+      .person-text {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        color: $color-grey-light;
+      }
+    }
+
+    .card-footer {
+      margin-top: 3rem;
+
+      img {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-right: 1.3rem;
+      }
+    }
+  }
 }
