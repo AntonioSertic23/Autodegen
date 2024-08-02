@@ -16,7 +16,24 @@ For this project, I chose to replicate a design I found on Behance: [AI Autodege
 
 ## Learning Objective
 
-The primary objective of this project is to reinforce my skills by applying what I learned in the course. The Advanced CSS and Sass course includes three main projects, each focusing on different aspects of CSS and Sass. If you're familiar with the course, you'll know each project is unique in its approach.
+The primary objective of this project is to reinforce my skills by applying what I learned in the course. The Advanced CSS and Sass course includes three main projects, each focusing on different aspects of CSS and Sass.
+
+#### Layout types
+
+- Float Layout
+
+  The old way of building layouts of all sizes, using the float CSS property. Still used, but getting outdated.
+  &nbsp;
+
+- Flexbox
+
+  Modern way of laying out elements in a 1-dimensional row without using floats. Perfect for component layouts.
+  &nbsp;
+
+- CSS Grid
+
+  For laying out elements in a fully-fledged 2-dimensional grid. Perfect for page layouts and complex components.
+  &nbsp;
 
 ## Project Structure
 
