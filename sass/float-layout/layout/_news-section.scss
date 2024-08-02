@@ -1,4 +1,4 @@
-.news-section {
+.news {
   &__title {
     font-size: 6.4rem;
     font-weight: 700;
@@ -8,55 +8,57 @@
     display: block;
     color: $color-grey-light;
     padding: 3rem 0;
-    border-bottom: 1px solid #95f3864d;
+    border-bottom: 1px solid rgba($color-primary, 0.3);
 
-    .card_title {
+    &__title {
       font-size: 3.6rem;
     }
-    .card_text {
+
+    &__text {
       font-size: 1.6rem;
+      margin-top: 1rem;
       margin-bottom: 3rem;
       max-width: 90%;
+      font-family: "CourierPrime", sans-serif;
     }
 
-    .card_badges-container {
-      .card_badge {
-        font-size: 1.4rem;
-        display: inline-block;
-        padding: 8px 5px;
+    &__badge {
+      font-family: "CourierPrime", sans-serif;
+      font-size: 1.4rem;
+      display: inline-block;
+      padding: 0.8rem 0.5rem;
 
-        img,
-        p {
-          float: left;
-        }
-
-        p {
-          margin-left: 6px;
-        }
-
-        &:not(:first-of-type) {
-          margin-left: 2.6rem;
-        }
+      .card__icon,
+      &-text {
+        float: left;
       }
 
-      .badge_likes,
-      .badge_dislikes {
+      &-text {
+        margin-left: 0.6rem;
+      }
+
+      &:not(:first-of-type) {
+        margin-left: 2.6rem;
+      }
+
+      &--likes,
+      &--dislikes {
         border: 1px solid $color-grey-dark-2;
-        border-radius: 10px;
+        border-radius: 1rem;
         background-color: $color-primary;
       }
 
-      .badge_likes {
+      &--likes {
         color: $color-grey-dark-2;
       }
 
-      .badge_dislikes {
+      &--dislikes {
         background-color: $color-grey-dark-4;
         color: $color-primary;
       }
 
-      .badge_time,
-      .badge_date {
+      &--time,
+      &--date {
         color: $color-grey;
       }
     }

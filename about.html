@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="css/style.css" />
     <title>Autodegen | AI-powered assistant</title>
   </head>
-  <body class="bg-video">
-    <nav>
+  <body class="page page--bg-video">
+    <!-- Main Navigation -->
+    <nav class="nav">
       <div class="nav__logo-box">
         <img src="./img/LOGO_flat.png" alt="Logo" class="nav__logo" />
         <p class="nav__title">AUTODEGEN</p>
       </div>
-
       <ul class="nav__list">
         <li class="nav__item">
           <a href="index.html" class="nav__link">AI</a>
@@ -25,7 +24,7 @@
           <a href="terminal.html" class="nav__link">Terminal</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link active">About</a>
+          <a href="#" class="nav__link nav__link--active">About</a>
         </li>
         <li class="nav__item">
           <a href="#contact" class="nav__link">Contact</a>
@@ -33,48 +32,130 @@
       </ul>
     </nav>
 
-    <main>
-      <section class="about-section about-section-1">
-        <h1 class="about-section__title">[ABOUT]</h1>
-        <div class="about-section__content-left">
-          <h2 class="section-title">what is it</h2>
-          <p class="section-text">
-            Embrace your inner DeGen and conquer the crypto markets with a single click. Autodegen is here to transform you into a sophisticated actor in the world of high-stakes trading. Our platform
-            leverages advanced algorithms and AI to automate your trading strategy, navigating through the volatile seas of crypto to unearth treasure troves others might miss.
-          </p>
-        </div>
-        <div class="about-section__content-right">
-          <img class="about_icon" src="./img/about_icon-1.png" alt="about icon 1" />
-          <img class="about_icon" src="./img/about_icon-2.png" alt="about icon 2" />
-          <img class="about_icon" src="./img/about_icon-3.png" alt="about icon 3" />
-          <img class="about_icon" src="./img/about_icon-4.png" alt="about icon 4" />
-          <img class="about_icon" src="./img/about_icon-5.png" alt="about icon 5" />
-          <img class="about_icon" src="./img/about_icon-6.png" alt="about icon 6" />
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- About Section 1 -->
+      <section class="about about--section-1">
+        <h1 class="about__title">[ABOUT]</h1>
+        <div class="about__content">
+          <div class="about__content-left">
+            <h2 class="about__subtitle">What is it</h2>
+            <p class="about__text">
+              Embrace your inner DeGen and conquer the crypto markets with a single click. Autodegen is here to transform you into a sophisticated actor in the world of high-stakes trading. Our
+              platform leverages advanced algorithms and AI to automate your trading strategy, navigating through the volatile seas of crypto to unearth treasure troves others might miss.
+            </p>
+          </div>
+          <div class="about__content-right">
+            <img class="about__icon" src="./img/about_icon-1.png" alt="about icon 1" />
+            <img class="about__icon" src="./img/about_icon-2.png" alt="about icon 2" />
+            <img class="about__icon" src="./img/about_icon-3.png" alt="about icon 3" />
+            <img class="about__icon" src="./img/about_icon-4.png" alt="about icon 4" />
+            <img class="about__icon" src="./img/about_icon-5.png" alt="about icon 5" />
+            <img class="about__icon" src="./img/about_icon-6.png" alt="about icon 6" />
+          </div>
         </div>
       </section>
 
-      <section class="about-section about-section-2">
-        <div class="about-section__content-left">
-          <img class="about_icon about_icon-1" src="./img/about_icon-7.png" alt="about icon 1" />
-          <img class="about_icon about_icon-2" src="./img/LOGO_flat.png" alt="about icon 2" />
-          <img class="about_icon about_icon-3" src="./img/about_icon-8.png" alt="about icon 3" />
+      <!-- About Section 2 -->
+      <section class="about about--section-2">
+        <div class="about__content">
+          <div class="about__content-left">
+            <img class="about__icon about__icon-1" src="./img/about_icon-7.png" alt="about icon 1" />
+            <img class="about__icon about__icon-2" src="./img/LOGO_flat.png" alt="about icon 2" />
+            <img class="about__icon about__icon-3" src="./img/about_icon-8.png" alt="about icon 3" />
+          </div>
+          <div class="about__content-right">
+            <h2 class="about__subtitle">How to Start</h2>
+            <p class="about__text">
+              Embrace your inner DeGen and conquer the crypto markets with a single click. Autodegen is here to transform you into a sophisticated actor in the world of high-stakes trading. Our
+              platform leverages advanced algorithms and AI to automate your trading strategy, navigating through the volatile seas of crypto to unearth treasure troves others might miss.
+            </p>
+          </div>
         </div>
-        <div class="about-section__content-right">
-          <h2 class="section-title">how to start</h2>
-          <p class="section-text">
-            Embrace your inner DeGen and conquer the crypto markets with a single click. Autodegen is here to transform you into a sophisticated actor in the world of high-stakes trading. Our platform
-            leverages advanced algorithms and AI to automate your trading strategy, navigating through the volatile seas of crypto to unearth treasure troves others might miss.
-          </p>
+      </section>
+
+      <!-- About Section 3 - Team -->
+      <section class="about about--section-3">
+        <div class="about__content">
+          <div class="about__content-left">
+            <h2 class="about__subtitle">Team</h2>
+            <p class="about__text">This is our team that has been developing our chatbot and training it for several years now so that you can easily manage your assets!</p>
+          </div>
+          <div class="team">
+            <div class="team__card">
+              <div class="team__card-header">
+                <img class="team__icon" src="./img/about-team-icon-1.png" alt="about team icon 1" />
+              </div>
+              <div class="team__card-body">
+                <p class="team__name">Gadpx</p>
+                <p class="team__position">UX/UI Designer</p>
+                <p class="team__text">I'm making the world a better and simpler place! You are now in a design created by my hands together with our team</p>
+              </div>
+              <div class="team__card-footer">
+                <img src="./img/facebook-icon.png" alt="facebook icon" class="team__social-icon" />
+                <img src="./img/linkedin-icon.png" alt="linkedin icon" class="team__social-icon" />
+                <img src="./img/twitter-icon-round.png" alt="twitter icon" class="team__social-icon" />
+              </div>
+            </div>
+
+            <div class="team__card">
+              <div class="team__card-header">
+                <img class="team__icon" src="./img/about-team-icon-2.png" alt="about team icon 2" />
+              </div>
+              <div class="team__card-body">
+                <p class="team__name">Roman</p>
+                <p class="team__position">CEO</p>
+                <p class="team__text">I am the initiator of this idea! Together with the team, we are working on this intelligence and all its functions!</p>
+              </div>
+              <div class="team__card-footer">
+                <img src="./img/facebook-icon.png" alt="facebook icon" class="team__social-icon" />
+                <img src="./img/linkedin-icon.png" alt="linkedin icon" class="team__social-icon" />
+                <img src="./img/twitter-icon-round.png" alt="twitter icon" class="team__social-icon" />
+              </div>
+            </div>
+
+            <div class="team__card">
+              <div class="team__card-header">
+                <img class="team__icon" src="./img/about-team-icon-3.png" alt="about team icon 3" />
+              </div>
+              <div class="team__card-body">
+                <p class="team__name">Name</p>
+                <p class="team__position">Post</p>
+                <p class="team__text">I am the initiator of this idea! Together with the team, we are working on this intelligence and all its functions!</p>
+              </div>
+              <div class="team__card-footer">
+                <img src="./img/facebook-icon.png" alt="facebook icon" class="team__social-icon" />
+                <img src="./img/linkedin-icon.png" alt="linkedin icon" class="team__social-icon" />
+                <img src="./img/twitter-icon-round.png" alt="twitter icon" class="team__social-icon" />
+              </div>
+            </div>
+
+            <div class="team__card">
+              <div class="team__card-header">
+                <img class="team__icon" src="./img/about-team-icon-4.png" alt="about team icon 4" />
+              </div>
+              <div class="team__card-body">
+                <p class="team__name">Name</p>
+                <p class="team__position">Post</p>
+                <p class="team__text">I am the initiator of this idea! Together with the team, we are working on this intelligence and all its functions!</p>
+              </div>
+              <div class="team__card-footer">
+                <img src="./img/facebook-icon.png" alt="facebook icon" class="team__social-icon" />
+                <img src="./img/linkedin-icon.png" alt="linkedin icon" class="team__social-icon" />
+                <img src="./img/twitter-icon-round.png" alt="twitter icon" class="team__social-icon" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <nav>
+    <!-- Footer Navigation -->
+    <nav class="nav nav--footer">
       <div class="nav__logo-box">
         <img src="./img/LOGO_flat.png" alt="Logo" class="nav__logo" />
         <p class="nav__title">AUTODEGEN</p>
       </div>
-
       <ul class="nav__list">
         <li class="nav__item">
           <a href="index.html" class="nav__link">AI</a>
@@ -86,7 +167,7 @@
           <a href="terminal.html" class="nav__link">Terminal</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link active">About</a>
+          <a href="#" class="nav__link nav__link--active">About</a>
         </li>
         <li class="nav__item">
           <a href="#contact" class="nav__link">Contact</a>
@@ -94,18 +175,16 @@
       </ul>
     </nav>
 
+    <!-- Contact Section -->
     <div class="contact" id="contact">
       <div class="contact__content">
         <h1 class="contact__title">[Contacts]</h1>
-
-        <div class="contact__social_media-container">
-          <img class="social_media-icon" src="./img/telegram-icon.png" alt="telegram" />
-          <img class="social_media-icon" src="./img/twitter-icon.png" alt="twitter" />
-          <img class="social_media-icon" src="./img/discord-icon.png" alt="discord" />
+        <div class="contact__social-media">
+          <img class="contact__icon" src="./img/telegram-icon.png" alt="telegram" />
+          <img class="contact__icon" src="./img/twitter-icon.png" alt="twitter" />
+          <img class="contact__icon" src="./img/discord-icon.png" alt="discord" />
         </div>
-
         <h3 class="contact__email">AI@AUTODEGEN.IO</h3>
-
         <a href="#" class="contact__close">close</a>
       </div>
     </div>

@@ -8,22 +8,21 @@
   z-index: 9999;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
 
   &__content {
     position: relative;
     height: 70%;
     width: 94%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../img/white_noise.gif);
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     display: table;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.3s 0.2s;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    transition: opacity 0.3s 0.2s;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
     text-align: center;
   }
 
@@ -33,15 +32,15 @@
     margin-top: 9rem;
   }
 
-  &__social_media-container {
+  &__social-media {
     margin-top: 6rem;
-    .social_media-icon {
-      transform: scale(0.5);
-      vertical-align: middle;
+  }
+  &__icon {
+    transform: scale(0.5);
+    vertical-align: middle;
 
-      &:not(:last-of-type) {
-        margin-right: 3rem;
-      }
+    &:not(:last-of-type) {
+      margin-right: 3rem;
     }
   }
 
@@ -49,30 +48,25 @@
     margin-top: 6rem;
     font-size: 4rem;
     color: $color-grey-light;
+    font-family: "CourierPrime", sans-serif;
     font-weight: 400;
   }
 
-  //Open states
+  // Open states
   &:target {
     opacity: 1;
     visibility: visible;
   }
 
-  &:target &__content {
+  &:target .contact__content {
     opacity: 1;
   }
 
   &__close {
-    &:link,
-    &:visited {
-      color: $color-primary;
-      font-size: 2.4rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.2s;
-      line-height: 1;
-      position: absolute;
-      bottom: 4rem;
-    }
+    color: $color-primary;
+    font-size: 2.4rem;
+    text-decoration: none;
+    display: block;
+    margin-top: 12rem;
   }
 }

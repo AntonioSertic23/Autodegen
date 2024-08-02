@@ -3,20 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="css/style.css" />
     <title>Autodegen | AI-powered assistant</title>
   </head>
-  <body class="bg-video">
-    <nav>
+  <body class="page">
+    <nav class="nav">
       <div class="nav__logo-box">
         <img src="./img/LOGO_flat.png" alt="Logo" class="nav__logo" />
         <p class="nav__title">AUTODEGEN</p>
       </div>
-
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="#" class="nav__link active">AI</a>
+          <a href="#" class="nav__link nav__link--active">AI</a>
         </li>
         <li class="nav__item">
           <a href="news.html" class="nav__link">News</a>
@@ -33,59 +31,57 @@
       </ul>
     </nav>
 
-    <main>
-      <section class="ai-section">
-        <h1 class="ai-section__title">[AI] AUTODEGEN</h1>
-        <div class="ai-section__content">
-          <p class="ai-text"><span>[AI]AUTODEGEN: </span>Hello! My name is [AI] AUTODEGEN. I am an AI-powered assistant. Do you have any questions about Aimane? I can answer them.</p>
-          <p class="user-text"><span>YOU: </span>Hi autodegen</p>
-          <p class="ai-text">
-            <span>[AI]AUTODEGEN: </span>Hello everybody! How can I help you today? Remember, my main skills are to help you trade automatically on both CEX and Once inDEX, using my algorithms to
-            navigate the complex dynamics of cryptocurrency and profit from it.
+    <main class="main">
+      <section class="ai">
+        <h1 class="ai__title">[AI] AUTODEGEN</h1>
+        <div class="ai__content">
+          <p class="ai__text">
+            <span class="ai__name">[AI]AUTODEGEN: </span>Hello! My name is [AI] AUTODEGEN. I am an AI-powered assistant. Do you have any questions about Aimane? I can answer them.
           </p>
-          <input type="text" name="prompt" id="prompt-input" placeholder=" Type a message here and hit Enter…" />
+          <p class="ai__text ai__text--user"><span class="ai__name">YOU: </span>Hi autodegen</p>
+          <p class="ai__text">
+            <span class="ai__name">[AI]AUTODEGEN: </span>Hello everybody! How can I help you today? Remember, my main skills are to help you trade automatically on both CEX and Once inDEX, using my
+            algorithms to navigate the complex dynamics of cryptocurrency and profit from it.
+          </p>
+          <input type="text" name="prompt" id="prompt-input" class="ai__input" placeholder=" Type a message here and hit Enter…" />
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-left">
-        <div class="cell">
-          <img src="./img/white_noise.gif" alt="Profile picture" class="profile-picture" />
+      <div class="footer__left">
+        <div class="footer__cell">
+          <img src="./img/white_noise.gif" alt="Profile picture" class="footer__profile-picture" />
         </div>
-
-        <div class="footer-left__credits cell">
-          <p class="footer-left__credits-title">CREDITS</p>
-          <p class="footer-left__credits-amount">00.00</p>
+        <div class="footer__cell footer__credits">
+          <p class="footer__credits-title">CREDITS</p>
+          <p class="footer__credits-amount">00.00</p>
         </div>
-
-        <div class="cell">
-          <button class="btn signup-btn">SIGN UP</button>
+        <div class="footer__cell">
+          <button class="footer__button footer__button--signup">SIGN UP</button>
         </div>
       </div>
-
-      <div class="footer-right">
-        <div class="footer-right__content">
-          <img src="./img/LOGO_flat.png" alt="" />
-          <p>Servers are up and running</p>
-          <img src="./img/LOGO_flat.png" alt="" />
-          <p>Servers are up and running</p>
+      <div class="footer__right">
+        <div class="footer__content">
+          <img src="./img/LOGO_flat.png" alt="Logo" class="footer__logo" />
+          <p class="footer__status">Servers are up and running</p>
+          <img src="./img/LOGO_flat.png" alt="Logo" class="footer__logo" />
+          <p class="footer__status">Servers are up and running</p>
+          <img src="./img/LOGO_flat.png" alt="Logo" class="footer__logo" />
         </div>
       </div>
     </footer>
 
+    <!-- Contact Section -->
     <div class="contact" id="contact">
       <div class="contact__content">
         <h1 class="contact__title">[Contacts]</h1>
-
-        <div class="contact__social_media-container">
-          <img class="social_media-icon" src="./img/telegram-icon.png" alt="telegram" />
-          <img class="social_media-icon" src="./img/twitter-icon.png" alt="twitter" />
-          <img class="social_media-icon" src="./img/discord-icon.png" alt="discord" />
+        <div class="contact__social-media">
+          <img class="contact__icon" src="./img/telegram-icon.png" alt="telegram" />
+          <img class="contact__icon" src="./img/twitter-icon.png" alt="twitter" />
+          <img class="contact__icon" src="./img/discord-icon.png" alt="discord" />
         </div>
-
         <h3 class="contact__email">AI@AUTODEGEN.IO</h3>
-
         <a href="#" class="contact__close">close</a>
       </div>
     </div>
