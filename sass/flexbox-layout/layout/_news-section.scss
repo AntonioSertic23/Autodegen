@@ -4,8 +4,13 @@
     font-weight: 700;
   }
 
+  .cards__section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
   .card {
-    display: block;
     color: $color-grey-light;
     padding: 3rem 0;
     border-bottom: 1px solid rgba($color-primary, 0.3);
@@ -22,30 +27,30 @@
       font-family: "CourierPrime", sans-serif;
     }
 
+    &__badges {
+      display: flex;
+      flex-direction: row;
+      column-gap: 2.6rem;
+    }
+
     &__badge {
       font-family: "CourierPrime", sans-serif;
       font-size: 1.4rem;
-      display: inline-block;
       padding: 0.8rem 0.5rem;
 
-      .card__icon,
-      &-text {
-        float: left;
-      }
+      display: flex;
+      align-items: center;
+      column-gap: 0.6rem;
 
       &-text {
-        margin-left: 0.6rem;
-      }
-
-      &:not(:first-of-type) {
-        margin-left: 2.6rem;
+        margin-top: 0.2rem;
       }
 
       &--likes,
       &--dislikes {
-        border: 1px solid $color-grey-dark-2;
-        border-radius: 1rem;
         background-color: $color-primary;
+        border: 1px solid $color-primary;
+        border-radius: 1rem;
       }
 
       &--likes {
@@ -61,10 +66,6 @@
       &--date {
         color: $color-grey;
       }
-    }
-
-    &:first-of-type {
-      margin-top: 5rem;
     }
   }
 }
