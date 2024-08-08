@@ -2,18 +2,19 @@
   height: 7.8rem;
   margin-bottom: 3rem;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   &__left {
     border: 1px solid $color-grey-dark-3;
     border-radius: 50rem;
-    float: left;
     padding: 1.4rem;
-    display: table;
     margin-left: 6rem;
-  }
+    width: 20%;
 
-  &__cell {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
   }
 
   &__profile-picture {
@@ -25,6 +26,7 @@
   &__credits {
     font-family: "CourierPrime", sans-serif;
     padding-left: 1rem;
+    flex: 1;
 
     &-title {
       font-size: 1.4rem;
@@ -39,7 +41,6 @@
 
   &__button--signup {
     font-family: "AutonomaDisplayBold", sans-serif;
-    margin-left: 4.8rem;
     border: 1px solid $color-primary;
     border-radius: 50rem;
     background-color: $color-black;
@@ -55,7 +56,6 @@
   }
 
   &__right {
-    float: right;
     border: 1px solid $color-primary;
     border-radius: 2.4rem;
     width: 43.5rem;
