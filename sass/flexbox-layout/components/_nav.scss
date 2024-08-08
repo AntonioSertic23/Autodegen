@@ -1,88 +1,86 @@
-nav {
+.nav {
   margin: 3.7rem 5rem;
   height: 2.8rem;
 
-  .nav__logo-box {
-    display: inline-block;
+  &__logo-box {
     float: left;
     position: relative;
-
-    .nav__logo {
-      height: 2.6rem;
-    }
-
-    .nav__title {
-      font-size: 2rem;
-      display: inline-block;
-
-      position: absolute;
-      top: 0;
-      margin-left: 1rem;
-    }
   }
 
-  .nav__list {
+  &__logo {
+    height: 2.6rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    margin-left: 1rem;
+  }
+
+  &__list {
+    font-family: "CourierPrime", sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-block;
     float: right;
+  }
 
-    .nav__item {
-      display: inline;
-      font-size: 2rem;
+  &__item {
+    display: inline;
+    font-size: 2rem;
 
-      &:not(:last-child) {
-        margin-right: 3rem;
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__link {
+    color: $color-grey;
+    text-decoration: none;
+    padding: 0 1.2rem;
+    position: relative;
+
+    &::before {
+      content: "[";
+      position: absolute;
+      opacity: 0;
+      transition: transform 0.6s;
+      transform: translateX(-1.2rem);
+    }
+
+    &::after {
+      content: "]";
+      position: absolute;
+      opacity: 0;
+      transition: transform 0.6s;
+      transform: translateX(0);
+    }
+
+    &:hover {
+      color: $color-primary;
+
+      &::before {
+        transform: translateX(-1.7rem);
+        opacity: 1;
       }
 
-      .nav__link {
-        color: $color-grey;
-        text-decoration: none;
-        padding: 0 1.2rem;
-        position: relative;
+      &::after {
+        transform: translateX(0.5rem);
+        opacity: 1;
+      }
+    }
 
-        &::before {
-          content: "[";
-          position: absolute;
-          opacity: 0;
-          transition: transform 0.6s;
-          transform: translateX(-1.2rem);
-        }
+    &--active {
+      color: $color-primary;
 
-        &::after {
-          content: "]";
-          position: absolute;
-          opacity: 0;
-          transition: transform 0.6s;
-          transform: translateX(0);
-        }
-
-        &:hover {
-          color: $color-primary;
-
-          &::before {
-            transform: translateX(-1.7rem);
-            opacity: 1;
-          }
-
-          &::after {
-            transform: translateX(0.5rem);
-            opacity: 1;
-          }
-        }
+      &::before {
+        opacity: 1;
       }
 
-      .active {
-        color: $color-primary;
-
-        &::before {
-          opacity: 1;
-        }
-
-        &::after {
-          opacity: 1;
-        }
+      &::after {
+        opacity: 1;
       }
     }
   }
