@@ -1,21 +1,24 @@
-.about {
-  &__title {
-    font-size: 6.4rem;
-    font-weight: 700;
-    margin-bottom: 10rem;
-  }
+.title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  margin-bottom: 10rem;
+}
 
-  &__content-left,
-  &__content-right {
-    width: 50%;
-    float: left;
+.about {
+  margin-bottom: 25rem;
+
+  &__content {
+    display: flex;
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
   }
 
   &__content-right {
     .about__icon {
       width: 9.5rem;
-      margin-right: 14rem;
-      margin-top: 6rem;
     }
   }
 
@@ -29,78 +32,81 @@
     font-size: 2rem;
     color: $color-grey-light;
     margin-top: 3rem;
-    margin-right: 27rem;
+    margin-right: 12rem;
   }
 }
 
 .about--section-1 {
-  height: 71rem;
+  .about__content-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 10rem;
+    align-items: flex-end;
+    margin-right: 15rem;
+  }
 }
 
 .about--section-2 {
   border: 1px solid $color-primary;
   border-radius: 4rem;
-  height: 50rem;
   margin-top: 10rem;
 
   .about__content-left {
+    display: flex;
+    justify-content: center;
+    padding-right: 10rem;
+
     .about__icon {
       width: 19rem;
     }
   }
 
   .about__icon-1 {
-    transform: translateY(-43%) translateX(-18%);
+    align-self: flex-start;
+    margin-right: auto;
+    transform: translateY(-21%) translateX(-18%);
   }
 
   .about__icon-2 {
-    transform: translateY(75%) translateX(75%);
+    align-self: center;
   }
 
   .about__icon-3 {
-    transform: translateY(186%) translateX(70%);
+    align-self: flex-end;
+    transform: translateY(24%) translateX(-8%);
   }
 
   .about__content-right {
     margin-top: 7rem;
-  }
-
-  .about__subtitle,
-  .about__text {
-    margin-right: 20rem;
-    margin-left: 7rem;
+    margin-bottom: 7rem;
   }
 }
 
 .about--section-3 {
-  margin-top: 30rem;
-
-  .about__content-left {
-    float: none;
+  .about__content {
+    flex-direction: column;
   }
-
   .team {
     margin-top: 8rem;
 
+    display: flex;
+    justify-content: space-between;
+
     &__card {
-      display: inline-block;
       width: 34.4rem;
       height: 56.7rem;
-
-      &:not(:last-of-type) {
-        margin-right: 12rem;
-      }
 
       &-header {
         width: 34.4rem;
         height: 34.4rem;
         border: 2px dashed $color-primary;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .team__icon {
           width: 20rem;
-          height: 20rem;
-          margin-top: 20%;
         }
       }
 
