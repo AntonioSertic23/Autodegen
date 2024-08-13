@@ -1,33 +1,17 @@
-.ai-section {
+.ai {
   &__title {
     font-size: 6.4rem;
     font-weight: 700;
   }
 
   &__content {
+    font-family: "CourierPrime", sans-serif;
     font-size: 2rem;
     margin-top: 5rem;
     color: $color-grey-light;
 
-    .ai-text {
-      margin-bottom: 2rem;
-      padding-right: 18rem;
-
-      span {
-        color: $color-primary;
-      }
-    }
-
-    .user-text {
-      margin-bottom: 2rem;
-      padding-right: 18rem;
-
-      span {
-        color: $color-secondary-light;
-      }
-    }
-
     #prompt-input {
+      font-family: "CourierPrime", sans-serif;
       font-size: 2rem;
       color: $color-grey-light;
       width: 100%;
@@ -35,5 +19,20 @@
       border: none;
       outline: none;
     }
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+    padding-right: 18rem;
+
+    &--user {
+      span {
+        color: $color-secondary-light;
+      }
+    }
+  }
+
+  &__name {
+    color: $color-primary;
   }
 }

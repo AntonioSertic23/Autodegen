@@ -1,0 +1,70 @@
+.news {
+  &__title {
+    font-size: 6.4rem;
+    font-weight: 700;
+  }
+
+  .card {
+    display: block;
+    color: $color-grey-light;
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba($color-primary, 0.3);
+
+    &__title {
+      font-size: 3.6rem;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      max-width: 90%;
+      font-family: "CourierPrime", sans-serif;
+    }
+
+    &__badge {
+      font-family: "CourierPrime", sans-serif;
+      font-size: 1.4rem;
+      display: inline-block;
+      padding: 0.8rem 0.5rem;
+
+      .card__icon,
+      &-text {
+        float: left;
+      }
+
+      &-text {
+        margin-left: 0.6rem;
+      }
+
+      &:not(:first-of-type) {
+        margin-left: 2.6rem;
+      }
+
+      &--likes,
+      &--dislikes {
+        border: 1px solid $color-grey-dark-2;
+        border-radius: 1rem;
+        background-color: $color-primary;
+      }
+
+      &--likes {
+        color: $color-grey-dark-2;
+      }
+
+      &--dislikes {
+        background-color: $color-grey-dark-4;
+        color: $color-primary;
+      }
+
+      &--time,
+      &--date {
+        color: $color-grey;
+      }
+    }
+
+    &:first-of-type {
+      margin-top: 5rem;
+    }
+  }
+}

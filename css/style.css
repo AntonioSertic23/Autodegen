@@ -76,24 +76,23 @@ body {
 
 .nav {
   margin: 3.7rem 5rem;
-  height: 2.8rem; }
+  height: 2.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .nav__logo-box {
-    float: left;
     position: relative; }
   .nav__logo {
     height: 2.6rem; }
   .nav__title {
     font-size: 2rem;
     display: inline-block;
-    position: absolute;
-    top: 0;
     margin-left: 1rem; }
   .nav__list {
     font-family: "CourierPrime", sans-serif;
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    float: right; }
+    padding: 0; }
   .nav__item {
     display: inline;
     font-size: 2rem; }
@@ -133,24 +132,26 @@ body {
 
 .footer {
   height: 7.8rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .footer__left {
     border: 1px solid #222222;
     border-radius: 50rem;
-    float: left;
     padding: 1.4rem;
-    display: table;
-    margin-left: 6rem; }
-  .footer__cell {
-    display: table-cell;
-    vertical-align: middle; }
+    margin-left: 6rem;
+    width: 20%;
+    display: flex;
+    align-items: center; }
   .footer__profile-picture {
     height: 4.5rem;
     width: 4.5rem;
     border-radius: 50%; }
   .footer__credits {
     font-family: "CourierPrime", sans-serif;
-    padding-left: 1rem; }
+    padding-left: 1rem;
+    flex: 1; }
     .footer__credits-title {
       font-size: 1.4rem;
       color: #a8a8a8; }
@@ -159,7 +160,6 @@ body {
       color: #edebe3; }
   .footer__button--signup {
     font-family: "AutonomaDisplayBold", sans-serif;
-    margin-left: 4.8rem;
     border: 1px solid #95f386;
     border-radius: 50rem;
     background-color: #000;
@@ -171,7 +171,6 @@ body {
       background-color: #95f386;
       color: #000; }
   .footer__right {
-    float: right;
     border: 1px solid #95f386;
     border-radius: 2.4rem;
     width: 43.5rem;
@@ -215,7 +214,6 @@ body {
   transition: opacity 0.3s, visibility 0.3s; }
   .contact__content {
     position: relative;
-    height: 70%;
     width: 94%;
     margin: 0 auto;
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../img/white_noise.gif);
@@ -254,7 +252,8 @@ body {
     font-size: 2.4rem;
     text-decoration: none;
     display: block;
-    margin-top: 12rem; }
+    margin-top: 12rem;
+    margin-bottom: 3rem; }
 
 .ai__title {
   font-size: 6.4rem;
