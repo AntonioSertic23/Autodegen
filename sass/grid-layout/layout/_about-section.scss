@@ -1,0 +1,141 @@
+.title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  margin-bottom: 10rem;
+}
+
+.about {
+  margin-bottom: 25rem;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &__content-right {
+    .about__icon {
+      width: 9.5rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 9.6rem;
+    color: $color-grey-light;
+  }
+
+  &__text {
+    font-family: "CourierPrime", sans-serif;
+    font-size: 2rem;
+    color: $color-grey-light;
+    margin-top: 3rem;
+    margin-right: 12rem;
+  }
+}
+
+.about--section-1 {
+  .about__content-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5rem;
+    align-self: end;
+  }
+}
+
+.about--section-2 {
+  border: 1px solid $color-primary;
+  border-radius: 4rem;
+  margin-top: 10rem;
+
+  .about__content-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 10rem;
+
+    .about__icon {
+      width: 19rem;
+    }
+  }
+
+  .about__icon-1 {
+    align-self: start;
+    margin-right: auto;
+    transform: translateY(-21%) translateX(-18%);
+  }
+
+  .about__icon-2 {
+    align-self: center;
+  }
+
+  .about__icon-3 {
+    align-self: end;
+    transform: translateY(24%) translateX(-8%);
+  }
+
+  .about__content-right {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+}
+
+.about--section-3 {
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+  .team {
+    margin-top: 8rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    column-gap: 2rem;
+
+    &__card {
+      width: 34.4rem;
+      height: 56.7rem;
+
+      &-header {
+        width: 34.4rem;
+        height: 34.4rem;
+        border: 2px dashed $color-primary;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        .team__icon {
+          width: 20rem;
+        }
+      }
+
+      &-body {
+        margin-top: 5rem;
+
+        .team__name {
+          font-size: 3.2rem;
+          color: $color-grey-light;
+        }
+
+        .team__position {
+          font-size: 1.6rem;
+          color: $color-grey;
+        }
+
+        .team__text {
+          font-family: "CourierPrime", sans-serif;
+          margin-top: 1rem;
+          font-size: 1.6rem;
+          color: $color-grey-light;
+        }
+      }
+
+      &-footer {
+        margin-top: 3rem;
+
+        .team__social-icon {
+          width: 2.6rem;
+          height: 2.6rem;
+          margin-right: 1.3rem;
+        }
+      }
+    }
+  }
+}
