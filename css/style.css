@@ -77,9 +77,8 @@ body {
 .nav {
   margin: 3.7rem 5rem;
   height: 2.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: 1fr auto; }
   .nav__logo-box {
     position: relative; }
   .nav__logo {
@@ -133,16 +132,16 @@ body {
 .footer {
   height: 7.8rem;
   margin-bottom: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: 1fr auto; }
   .footer__left {
     border: 1px solid #222222;
     border-radius: 50rem;
     padding: 1.4rem;
     margin-left: 6rem;
-    width: 20%;
-    display: flex;
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
     align-items: center; }
   .footer__profile-picture {
     height: 4.5rem;
@@ -150,14 +149,15 @@ body {
     border-radius: 50%; }
   .footer__credits {
     font-family: "CourierPrime", sans-serif;
-    padding-left: 1rem;
-    flex: 1; }
+    padding-left: 1rem; }
     .footer__credits-title {
       font-size: 1.4rem;
       color: #a8a8a8; }
     .footer__credits-amount {
       font-size: 1.6rem;
       color: #edebe3; }
+  .footer .footer__cell:last-child {
+    justify-self: end; }
   .footer__button--signup {
     font-family: "AutonomaDisplayBold", sans-serif;
     border: 1px solid #95f386;
@@ -165,7 +165,8 @@ body {
     background-color: #000;
     color: #95f386;
     padding: 1.4rem 2.3rem;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    justify-self: end; }
     .footer__button--signup:hover {
       cursor: pointer;
       background-color: #95f386;
