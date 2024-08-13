@@ -287,8 +287,11 @@ body {
   font-size: 6.4rem;
   font-weight: 700; }
 
+.news .cards__section {
+  display: grid;
+  margin-top: 5rem; }
+
 .news .card {
-  display: block;
   color: #edebe3;
   padding: 3rem 0;
   border-bottom: 1px solid rgba(149, 243, 134, 0.3); }
@@ -300,21 +303,23 @@ body {
     margin-bottom: 3rem;
     max-width: 90%;
     font-family: "CourierPrime", sans-serif; }
+  .news .card__badges {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    column-gap: 2.6rem; }
   .news .card__badge {
     font-family: "CourierPrime", sans-serif;
     font-size: 1.4rem;
-    display: inline-block;
-    padding: 0.8rem 0.5rem; }
-    .news .card__badge .card__icon, .news .card__badge-text {
-      float: left; }
+    padding: 0.8rem 0.5rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem; }
     .news .card__badge-text {
-      margin-left: 0.6rem; }
-    .news .card__badge:not(:first-of-type) {
-      margin-left: 2.6rem; }
+      margin-top: 0.2rem; }
     .news .card__badge--likes, .news .card__badge--dislikes {
-      border: 1px solid #343434;
-      border-radius: 1rem;
-      background-color: #95f386; }
+      background-color: #95f386;
+      border: 1px solid #95f386;
+      border-radius: 1rem; }
     .news .card__badge--likes {
       color: #343434; }
     .news .card__badge--dislikes {
@@ -322,8 +327,6 @@ body {
       color: #95f386; }
     .news .card__badge--time, .news .card__badge--date {
       color: #a8a8a8; }
-  .news .card:first-of-type {
-    margin-top: 5rem; }
 
 .terminal__title {
   font-size: 6.4rem;
@@ -406,91 +409,94 @@ body {
     backdrop-filter: blur(6px);
     z-index: 100; }
 
-.about__title {
+.title {
   font-size: 6.4rem;
   font-weight: 700;
   margin-bottom: 10rem; }
 
-.about__content-left, .about__content-right {
-  width: 50%;
-  float: left; }
+.about {
+  margin-bottom: 25rem; }
+  .about__content {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+  .about__content-right .about__icon {
+    width: 9.5rem; }
+  .about__subtitle {
+    font-size: 9.6rem;
+    color: #edebe3; }
+  .about__text {
+    font-family: "CourierPrime", sans-serif;
+    font-size: 2rem;
+    color: #edebe3;
+    margin-top: 3rem;
+    margin-right: 12rem; }
 
-.about__content-right .about__icon {
-  width: 9.5rem;
-  margin-right: 14rem;
-  margin-top: 6rem; }
-
-.about__subtitle {
-  font-size: 9.6rem;
-  color: #edebe3; }
-
-.about__text {
-  font-family: "CourierPrime", sans-serif;
-  font-size: 2rem;
-  color: #edebe3;
-  margin-top: 3rem;
-  margin-right: 27rem; }
-
-.about--section-1 {
-  height: 71rem; }
+.about--section-1 .about__content-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5rem;
+  align-self: end; }
 
 .about--section-2 {
   border: 1px solid #95f386;
   border-radius: 4rem;
-  height: 50rem;
   margin-top: 10rem; }
-  .about--section-2 .about__content-left .about__icon {
-    width: 19rem; }
+  .about--section-2 .about__content-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 10rem; }
+    .about--section-2 .about__content-left .about__icon {
+      width: 19rem; }
   .about--section-2 .about__icon-1 {
-    transform: translateY(-43%) translateX(-18%); }
+    align-self: start;
+    margin-right: auto;
+    transform: translateY(-21%) translateX(-18%); }
   .about--section-2 .about__icon-2 {
-    transform: translateY(75%) translateX(75%); }
+    align-self: center; }
   .about--section-2 .about__icon-3 {
-    transform: translateY(186%) translateX(70%); }
+    align-self: end;
+    transform: translateY(24%) translateX(-8%); }
   .about--section-2 .about__content-right {
-    margin-top: 7rem; }
-  .about--section-2 .about__subtitle,
-  .about--section-2 .about__text {
-    margin-right: 20rem;
-    margin-left: 7rem; }
+    margin-top: 7rem;
+    margin-bottom: 7rem; }
 
-.about--section-3 {
-  margin-top: 30rem; }
-  .about--section-3 .about__content-left {
-    float: none; }
-  .about--section-3 .team {
-    margin-top: 8rem; }
-    .about--section-3 .team__card {
-      display: inline-block;
+.about--section-3 .about__content {
+  grid-template-columns: 1fr; }
+
+.about--section-3 .team {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  column-gap: 2rem; }
+  .about--section-3 .team__card {
+    width: 34.4rem;
+    height: 56.7rem; }
+    .about--section-3 .team__card-header {
       width: 34.4rem;
-      height: 56.7rem; }
-      .about--section-3 .team__card:not(:last-of-type) {
-        margin-right: 12rem; }
-      .about--section-3 .team__card-header {
-        width: 34.4rem;
-        height: 34.4rem;
-        border: 2px dashed #95f386;
-        text-align: center; }
-        .about--section-3 .team__card-header .team__icon {
-          width: 20rem;
-          height: 20rem;
-          margin-top: 20%; }
-      .about--section-3 .team__card-body {
-        margin-top: 5rem; }
-        .about--section-3 .team__card-body .team__name {
-          font-size: 3.2rem;
-          color: #edebe3; }
-        .about--section-3 .team__card-body .team__position {
-          font-size: 1.6rem;
-          color: #a8a8a8; }
-        .about--section-3 .team__card-body .team__text {
-          font-family: "CourierPrime", sans-serif;
-          margin-top: 1rem;
-          font-size: 1.6rem;
-          color: #edebe3; }
-      .about--section-3 .team__card-footer {
-        margin-top: 3rem; }
-        .about--section-3 .team__card-footer .team__social-icon {
-          width: 2.6rem;
-          height: 2.6rem;
-          margin-right: 1.3rem; }
+      height: 34.4rem;
+      border: 2px dashed #95f386;
+      display: grid;
+      justify-content: center;
+      align-items: center; }
+      .about--section-3 .team__card-header .team__icon {
+        width: 20rem; }
+    .about--section-3 .team__card-body {
+      margin-top: 5rem; }
+      .about--section-3 .team__card-body .team__name {
+        font-size: 3.2rem;
+        color: #edebe3; }
+      .about--section-3 .team__card-body .team__position {
+        font-size: 1.6rem;
+        color: #a8a8a8; }
+      .about--section-3 .team__card-body .team__text {
+        font-family: "CourierPrime", sans-serif;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        color: #edebe3; }
+    .about--section-3 .team__card-footer {
+      margin-top: 3rem; }
+      .about--section-3 .team__card-footer .team__social-icon {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-right: 1.3rem; }
